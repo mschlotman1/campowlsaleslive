@@ -11,6 +11,7 @@ import Favorite from "@material-ui/icons/Favorite";
 
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
 
+
 function Footer({ ...props }) {
   const { classes, whiteFont } = props;
   const footerClasses = classNames({
@@ -32,7 +33,7 @@ function Footer({ ...props }) {
                 className={classes.block}
                 target="_blank"
               >
-                Creative Tim
+                About Us
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
@@ -41,7 +42,7 @@ function Footer({ ...props }) {
                 className={classes.block}
                 target="_blank"
               >
-                About us
+                Services
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
@@ -50,7 +51,7 @@ function Footer({ ...props }) {
                 className={classes.block}
                 target="_blank"
               >
-                Blog
+                Pricing
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
@@ -59,22 +60,13 @@ function Footer({ ...props }) {
                 className={classes.block}
                 target="_blank"
               >
-                Licenses
+                Beta Testing
               </a>
             </ListItem>
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
-            href="https://www.creative-tim.com"
-            className={aClasses}
-            target="_blank"
-          >
-            Creative Tim
-          </a>{" "}
-          for a better web.
+          &copy; {1900 + new Date().getYear()} , Camp Owl Logo, Stress less. Manage More.
         </div>
       </div>
     </footer>

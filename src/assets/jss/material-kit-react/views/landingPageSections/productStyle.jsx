@@ -9,7 +9,9 @@ const productStyle = {
     ...title,
     marginBottom: "1rem",
     marginTop: "30px",
-    minHeight: "32px",
+    minHeight: "40px",
+    fontSize: "1.8em",
+
     textDecoration: "none"
   },
   description: {
