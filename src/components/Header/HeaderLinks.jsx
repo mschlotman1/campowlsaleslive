@@ -14,9 +14,9 @@ import { Apps, CloudDownload } from "@material-ui/icons";
 
 
 // React icons
-import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
-import Favorite from "@material-ui/icons/Favorite";
-import HelpIcon from '@material-ui/icons/Help';
+//import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+//import Favorite from "@material-ui/icons/Favorite";
+//import HelpIcon from '@material-ui/icons/Help';
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
 import Button from "components/CustomButtons/Button.jsx";
@@ -37,28 +37,30 @@ function HeaderLinks({ ...props }) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
+                  <Link to="/services" className={classes.dropdownLink}>
+                     Services
+                   </Link>,
+                <Link to="/about" className={classes.dropdownLink}>
+               About
+              </Link>,
+            <Link to="/pricing" className={classes.dropdownLink}>
               Pricing
-            </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Products
-            </a>
+          </Link>,
+       <Link to="/software-beta" className={classes.dropdownLink}>
+       Beta Testing
+     </Link>,
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
+          id="Phone"
+          title="Questions? Open 9-6 Daily"
           placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-           <Button color="primary" round>
-                  <HelpIcon className={classes.icons} /> (480) 415-6215
+           <Button color="primary" >
+                   (480) 415-6215
                 </Button>
         </Tooltip>
       </ListItem>

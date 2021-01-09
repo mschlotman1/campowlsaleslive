@@ -5,11 +5,12 @@ import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 import { List, ListItem, withStyles } from "@material-ui/core";
-
+import { Link } from "gatsby"
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
+
 
 
 function Footer({ ...props }) {
@@ -28,45 +29,25 @@ function Footer({ ...props }) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                About Us
-              </a>
+              <Link className={classes.block} to="/servicespage">Services</Link>
+           </ListItem>
+             <ListItem className={classes.inlineBlock}>
+                <Link className={classes.block} to="/about">About us </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation"
-                className={classes.block}
-                target="_blank"
-              >
-                Services
-              </a>
+              <Link className={classes.block} to="/pricing">Pricing</Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                Pricing
-              </a>
+              <Link className={classes.block} to="/software-beta">Beta Testing </Link>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license"
-                className={classes.block}
-                target="_blank"
-              >
-                Beta Testing
-              </a>
-            </ListItem>
+           
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , Camp Owl Logo, Stress less. Manage More.
+          &copy; {1900 + new Date().getYear()} , CampOwl Logo
+          <Favorite className={classes.icon} />
+    
+          Stress Less. Manage More.
         </div>
       </div>
     </footer>

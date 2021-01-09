@@ -34,7 +34,7 @@ import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 
-class ProfilePage extends React.Component {
+class AboutPage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     const imageClasses = classNames(
@@ -67,7 +67,7 @@ class ProfilePage extends React.Component {
                       <img src={profile} alt="..." className={imageClasses} />
                     </div>
                     <div className={classes.name}>
-                      <h3 className={classes.title}>Christian Louboutin</h3>
+                      <h3 className={classes.title}>ABOUT PAGE</h3>
                       <h6>DESIGNER</h6>
                       <Button justIcon link className={classes.margin5}>
                         <FaTwitter/>
@@ -215,4 +215,4 @@ class ProfilePage extends React.Component {
   }
 }
 
-export default withStyles(profilePageStyle)(ProfilePage);
+export default withStyles(profilePageStyle)(AboutPage);

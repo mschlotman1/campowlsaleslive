@@ -1,3 +1,4 @@
+import { ImportantDevices } from "@material-ui/icons";
 import { container, primaryColor } from "assets/jss/material-kit-react.jsx";
 
 const footerStyle = {
@@ -35,7 +36,7 @@ const footerStyle = {
   },
   footerWhiteFont: {
     "&,&:hover,&:focus": {
-      color: "#FFFFFF"
+      color: "#0095da"
     }
   },
   container,
