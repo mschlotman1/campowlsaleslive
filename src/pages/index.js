@@ -15,7 +15,7 @@ import ServicesPage from "./ServicesPage/ServicesPage.jsx";
 import BetaPage from "./BetaPage/BetaPage.jsx";
 import AboutPage from "./AboutPage/About.jsx";
 import PricingPage from "./PricingPage/PricingPage.jsx";
-import ErrorPage from "./Errorpage/ErrorPage.jsx";
+import ErrorPage from "./ErrorPage/ErrorPage.jsx";
 
 let hist = createMemoryHistory();
 
