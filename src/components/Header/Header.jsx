@@ -10,6 +10,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 
+import logo from "../../assets/img/whiteoutlinelogo.png"
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
 
@@ -75,7 +76,7 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
-  const brandComponent =  "CampOwl"
+  const brandComponent =  <img width="40%" height="35%"src={logo} alt="CampOwl Logo" />
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>

@@ -10,7 +10,7 @@ const productStyle = {
     marginBottom: "1rem",
     marginTop: "30px",
     minHeight: "40px",
-    fontSize: "1.8em",
+    fontSize: "2em",
 
     textDecoration: "none"
   },

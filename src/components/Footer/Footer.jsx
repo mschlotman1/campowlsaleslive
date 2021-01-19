@@ -10,7 +10,7 @@ import { Link } from "gatsby"
 import Favorite from "@material-ui/icons/Favorite";
 
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
-
+import logo from "../../assets/img/favicon3.png";
 
 
 function Footer({ ...props }) {
@@ -44,8 +44,8 @@ function Footer({ ...props }) {
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , CampOwl Logo
-          <Favorite className={classes.icon} />
+          &copy; {1900 + new Date().getYear()}  <img width="5%"src={logo} alt="small campowl logo"></img>
+          
     
           Stress Less. Manage More.
         </div>

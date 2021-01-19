@@ -18,7 +18,7 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 
 import Badge from "components/Badge/Badge.jsx";
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
-import ProductSection from "../LandingPage/Sections/ProductSection.jsx";
+import ProductSection from "../HomePage/Sections/ProductSection.jsx";
 
 class HomePage extends React.Component {
   render() {
@@ -36,17 +36,17 @@ class HomePage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/bg4.jpg")}>
+        <Parallax image={require("assets/img/bg200.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}> Home Page Material Kit React.</h1>
+                  <h1 className={classes.title}> Stress Less. Manage More.</h1>
                   
                   <h3 className={classes.subtitle}>
-                    A Badass Material-UI Kit based on Material Design.
+                    Business Solutions Made Easy
                   </h3>
-                  <Badge color="primary">primary</Badge>
+                  <Badge color="primary">Managed Technology Provider for RV Parks, Resorts, and Campgrounds </Badge>
                 </div>
               </GridItem>
             </GridContainer>

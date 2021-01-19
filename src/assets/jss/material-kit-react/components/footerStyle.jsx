@@ -1,4 +1,4 @@
-import { ImportantDevices } from "@material-ui/icons";
+
 import { container, primaryColor } from "assets/jss/material-kit-react.jsx";
 
 const footerStyle = {
@@ -18,7 +18,7 @@ const footerStyle = {
     display: "block"
   },
   right: {
-    padding: "15px 0",
+    padding: "15px ",
     margin: "0",
     float: "right!important"
   },
@@ -56,5 +56,6 @@ const footerStyle = {
     position: "relative",
     top: "3px"
   }
+
 };
 export default footerStyle;

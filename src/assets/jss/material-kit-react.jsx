@@ -68,7 +68,8 @@ const defaultFont = {
   fontWeight: "300",
   lineHeight: "1.5em"
 };
-
+const lightblueColor ="#0095DA";
+const darkblueColor ="#034EA2";
 const primaryColor = "#0095DA";
 const warningColor = "#ff9800";
 const dangerColor = "#f44336";
@@ -188,6 +189,8 @@ export {
   boxShadow,
   card,
   defaultFont,
+  lightblueColor,
+  darkblueColor,
   primaryColor,
   warningColor,
   dangerColor,
