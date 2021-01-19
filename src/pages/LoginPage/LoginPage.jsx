@@ -6,8 +6,9 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
 import LockOutlined from "@material-ui/icons/LockOutlined";
+import WhereToVoteIcon from '@material-ui/icons/WhereToVote';
 // React icons
-import {FaFacebook, FaTwitter, FaGooglePlusG } from 'react-icons/fa';
+//import {FaFacebook, FaTwitter, FaGooglePlusG } from 'react-icons/fa';
 // core components
 import Header from "components/Header/Header.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
@@ -66,39 +67,12 @@ class LoginPage extends React.Component {
               <GridItem xs={12} sm={12} md={4}>
                 <Card className={classes[this.state.cardAnimaton]}>
                   <form className={classes.form}>
-                    <CardHeader color="primary" className={classes.cardHeader}>
-                      <h4>Login</h4>
-                      <div className={classes.socialLine}>
-                        <Button
-                          justIcon
-                          href="#pablo"
-                          target="_blank"
-                          color="transparent"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <FaTwitter/>
-                        </Button>
-                        <Button
-                          justIcon
-                          href="#pablo"
-                          target="_blank"
-                          color="transparent"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <FaFacebook/>
-                        </Button>
-                        <Button
-                          justIcon
-                          href="#pablo"
-                          target="_blank"
-                          color="transparent"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <FaGooglePlusG/>
-                        </Button>
-                      </div>
+                    <CardHeader color="danger" className={classes.cardHeader}>
+                      <h1>Pricing</h1>
+                      <h3>Not all parks are created equal, we make pricing simpler give us a call</h3>
+                     
                     </CardHeader>
-                    <p className={classes.divider}>Or Be Classical</p>
+                    <h4 className={classes.divider}>Or send us a message</h4>
                     <CardBody>
                       <CustomInput
                         labelText="First Name..."
@@ -131,16 +105,16 @@ class LoginPage extends React.Component {
                         }}
                       />
                       <CustomInput
-                        labelText="Password"
+                        labelText="Park Name..."
                         id="pass"
                         formControlProps={{
                           fullWidth: true
                         }}
                         inputProps={{
-                          type: "password",
+                          type: "Park Name",
                           endAdornment: (
                             <InputAdornment position="end">
-                              <LockOutlined/>
+                              <WhereToVoteIcon/>
                             </InputAdornment>
                           )
                         }}
@@ -148,7 +122,7 @@ class LoginPage extends React.Component {
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>
                       <Button simple color="primary" size="lg">
-                        Get started
+                        Send Now
                       </Button>
                     </CardFooter>
                   </form>

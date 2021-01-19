@@ -72,7 +72,7 @@ const lightblueColor ="#0095DA";
 const darkblueColor ="#034EA2";
 const primaryColor = "#0095DA";
 const warningColor = "#ff9800";
-const dangerColor = "#f44336";
+const dangerColor = "#034EA2";
 const successColor = "#4caf50";
 const infoColor = "#00acc1";
 const roseColor = "#e91e63";
@@ -115,7 +115,7 @@ const successCardHeader = {
 };
 const dangerCardHeader = {
   color: "#fff",
-  background: "linear-gradient(60deg, #ef5350, #e53935)",
+  background: "linear-gradient(60deg, #0095DA, #0095DA)",
   ...dangerBoxShadow
 };
 const infoCardHeader = {

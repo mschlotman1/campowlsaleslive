@@ -20,7 +20,7 @@ const loginStyle = {
   form: {
     margin: "0"
   },
-  cardHeader: {
+ /* cardHeader: {
     width: "auto",
     textAlign: "center",
     marginLeft: "20px",
@@ -28,7 +28,7 @@ const loginStyle = {
     marginTop: "-40px",
     padding: "20px 0",
     marginBottom: "15px"
-  },
+  },*/
   socialIcons: {
     maxWidth: "24px",
     marginTop: "0",

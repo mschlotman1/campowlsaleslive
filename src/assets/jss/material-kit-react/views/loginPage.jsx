@@ -1,6 +1,7 @@
 import { container } from "assets/jss/material-kit-react.jsx";
+import { darkblueColor } from "../../material-kit-react";
 
-const signupPageStyle = {
+const loginPageStyle = {
   container: {
     ...container,
     zIndex: "2",
@@ -53,7 +54,9 @@ const signupPageStyle = {
     marginRight: "20px",
     marginTop: "-40px",
     padding: "20px 0",
-    marginBottom: "15px"
+    marginBottom: "15px",
+    
+    
   },
   socialIcons: {
     maxWidth: "24px",
@@ -84,7 +87,8 @@ const signupPageStyle = {
   },
   inputIconsColor: {
     color: "#495057"
-  }
+  },
+  
 };
 
-export default signupPageStyle;
+export default loginPageStyle;

@@ -19,9 +19,9 @@ const buttonStyle = {
     border: "none",
     borderRadius: "3px",
     position: "relative",
-    padding: "12px 30px",
+    padding: "8px 15px",
     margin: ".3125rem 1px",
-    fontSize: "12px",
+    fontSize: "20px",
     fontWeight: "400",
     textTransform: "uppercase",
     letterSpacing: "0",
@@ -190,7 +190,7 @@ const buttonStyle = {
   },
   simple: {
     "&,&:focus,&:hover,&:visited": {
-      color: "#FFFFFF",
+      color: "#0095DA",
       background: "transparent",
       boxShadow: "none"
     },
@@ -258,7 +258,7 @@ const buttonStyle = {
   },
   lg: {
     padding: "1.125rem 2.25rem",
-    fontSize: "0.875rem",
+    fontSize: "0.98rem",
     lineHeight: "1.333333",
     borderRadius: "0.2rem"
   },

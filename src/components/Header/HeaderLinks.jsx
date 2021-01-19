@@ -10,8 +10,8 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
-
+import { Apps } from "@material-ui/icons";
+import PhoneIcon from '@material-ui/icons/Phone';
 
 // React icons
 //import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
@@ -59,8 +59,8 @@ function HeaderLinks({ ...props }) {
           placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-           <Button color="primary" >
-                   (480) 415-6215
+           <Button color="#034EA2" simple >
+             <PhoneIcon/>      (480) 415-6215
                 </Button>
         </Tooltip>
       </ListItem>
