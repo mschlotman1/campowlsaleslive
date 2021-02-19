@@ -3,9 +3,9 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
+import LanguageIcon from '@material-ui/icons/Language';
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -23,7 +23,7 @@ class ProductSection extends React.Component {
             <h2 className={classes.title}>Our Toolbox = Your Toolbox</h2>
             <h5 className={classes.description}>
              CampOwl provides innovative, industry leading technology solutions for Campgrounds and RV Resorts. One call for all
-             your technology solutions. Get out of the blame game, call campowl today.
+             your technology solutions. Services include hardware, networks, wireless mesh, websites, and more.
             </h5>
           </GridItem>
         </GridContainer>
@@ -33,7 +33,7 @@ class ProductSection extends React.Component {
               <InfoArea
                 title="Management Software"
                 description="Our state of the art Reservation Management System is on its way, currently in Beta Testing"
-                icon={Chat}
+                icon={DesktopWindowsIcon}
                 iconColor="info"
                 vertical
               />
@@ -51,7 +51,7 @@ class ProductSection extends React.Component {
               <InfoArea
                 title="Web Design/Hosting"
                 description="Blazing fast websites/hosting, todays era parks are selling 30-80% of reservations online,"
-                icon={Fingerprint}
+                icon={LanguageIcon}
                 iconColor="danger"
                 vertical
               />

@@ -20,6 +20,8 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import headerStyle from "assets/jss/material-kit-react/components/headerStyle.jsx";
 
+
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -69,6 +71,7 @@ class Header extends React.Component {
       leftLinks,
       brand,
       fixed,
+
       absolute
     } = this.props;
     const appBarClasses = classNames({
@@ -77,11 +80,13 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
-  const brandComponent =  <Button simple>
-    <img width="40%" height="35%"src={logo} alt="CampOwl Logo" />
-    
-  </Button>
+  const brandComponent =  
   
+ 
+  <Button simple>
+    <img width="40%" height="35%"src={logo} alt="CampOwl Logo" /> 
+  </Button>
+
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>

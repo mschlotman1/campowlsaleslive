@@ -15,7 +15,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import SectionBasics from "../Components/Sections/SectionBasics.jsx";
+import SectionTabs from "../Components/Sections/SectionTabs.jsx";
 
 import Badge from "components/Badge/Badge.jsx";
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
@@ -36,17 +36,17 @@ class BetaPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/bg4.jpg")}>
+        <Parallax image={require("assets/img/bg2.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Beta Page</h1>
+                  <h1 className={classes.title}>Reservation Management System</h1>
                   
                   <h3 className={classes.subtitle}>
-                    A Badass Material-UI Kit based on Material Design.
+                    State of the Art Technology loaded with features
                   </h3>
-                  <Badge color="primary">primary</Badge>
+                  <Badge color="primary">Currently in Beta Testing</Badge>
                 </div>
               </GridItem>
             </GridContainer>
@@ -54,8 +54,7 @@ class BetaPage extends React.Component {
         </Parallax>
 
         <div className={classNames(classes.main, classes.mainRaised)}>
-          <SectionBasics />
-       
+         <SectionTabs/>
         </div>
         <Footer />
       </div>
