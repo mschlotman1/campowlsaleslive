@@ -60,7 +60,7 @@ function HeaderLinks({ ...props }) {
           placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-           <Button color="#034EA2" simple >
+           <Button href="tel:480-415-6215"color="#034EA2" simple >
              <PhoneIcon/>      (480) 415-6215
                 </Button>
         </Tooltip>

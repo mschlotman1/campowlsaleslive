@@ -6,10 +6,9 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { List, ListItem, withStyles } from "@material-ui/core";
 import { Link } from "gatsby"
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
 
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
+
 import logo from "../../assets/img/favicon3.png";
 
 
@@ -29,7 +28,7 @@ function Footer({ ...props }) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <Link className={classes.block} to="/servicespage">Services</Link>
+              <Link className={classes.block} to="/services">Services</Link>
            </ListItem>
              <ListItem className={classes.inlineBlock}>
                 <Link className={classes.block} to="/about">About us </Link>
@@ -44,7 +43,7 @@ function Footer({ ...props }) {
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()}  <img width="5%"src={logo} alt="small campowl logo"></img>
+        &copy; {1900 + new Date().getYear()} &nbsp;<img width="5%"src={logo} alt="small campowl logo"></img> &nbsp;
           
     
           Stress Less. Manage More.

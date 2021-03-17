@@ -73,9 +73,9 @@ class LoginPage extends React.Component {
                      
                     </CardHeader>
                     <h4 className={classes.divider}>Please give us a ring, <br></br>we'd love to hear from you!</h4>
-                   
+            
                     <CardFooter className={classes.cardFooter}>
-                      <Button simple color="primary" size="lg">
+                      <Button href="tel:480-415-6215" simple color="primary" size="lg">
                         Call (480) 415 6215
                       </Button>
                     </CardFooter>
