@@ -69,60 +69,14 @@ class LoginPage extends React.Component {
                   <form className={classes.form}>
                     <CardHeader color="danger" className={classes.cardHeader}>
                       <h1>Pricing</h1>
-                      <h3>Not all parks are created equal, we make pricing simpler give us a call</h3>
+                      <h3>In order to get an accurate understanding<br></br> of plans and pricing</h3>
                      
                     </CardHeader>
-                    <h4 className={classes.divider}>Or send us a message</h4>
-                    <CardBody>
-                      <CustomInput
-                        labelText="First Name..."
-                        id="first"
-                        formControlProps={{
-                          fullWidth: true
-                        }}
-                        inputProps={{
-                          type: "text",
-                          endAdornment: (
-                            <InputAdornment position="end">
-                              <People className={classes.inputIconsColor} />
-                            </InputAdornment>
-                          )
-                        }}
-                      />
-                      <CustomInput
-                        labelText="Email..."
-                        id="email"
-                        formControlProps={{
-                          fullWidth: true
-                        }}
-                        inputProps={{
-                          type: "email",
-                          endAdornment: (
-                            <InputAdornment position="end">
-                              <Email className={classes.inputIconsColor} />
-                            </InputAdornment>
-                          )
-                        }}
-                      />
-                      <CustomInput
-                        labelText="Park Name..."
-                        id="pass"
-                        formControlProps={{
-                          fullWidth: true
-                        }}
-                        inputProps={{
-                          type: "Park Name",
-                          endAdornment: (
-                            <InputAdornment position="end">
-                              <WhereToVoteIcon/>
-                            </InputAdornment>
-                          )
-                        }}
-                      />
-                    </CardBody>
+                    <h4 className={classes.divider}>Please give us a ring, <br></br>we'd love to hear from you!</h4>
+                   
                     <CardFooter className={classes.cardFooter}>
                       <Button simple color="primary" size="lg">
-                        Send Now
+                        Call (480) 415 6215
                       </Button>
                     </CardFooter>
                   </form>

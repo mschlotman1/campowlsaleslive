@@ -4,11 +4,11 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
+
+import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
+import LanguageIcon from '@material-ui/icons/Language';
 // React icons
-import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
@@ -18,19 +18,32 @@ import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
-import favicon3 from "assets/img/favicon3.png"
-import profile from "assets/img/faces/christian.jpg";
+import favicon4 from "assets/img/favicon4.jpg";
+import SettingsInputAntennaIcon from '@material-ui/icons/SettingsInputAntenna';
+import ComputerIcon from '@material-ui/icons/Computer';
 
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio2 from "assets/img/examples/studio-2.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-import studio4 from "assets/img/examples/studio-4.jpg";
-import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
+import hardware1 from "assets/img/hardware1.jpg";
+import hardware3 from "assets/img/hardware3.jpg";
+import hardware4 from "assets/img/hardware4.jpg";
+
+import networks1  from "assets/img/networks1.jpg";
+import networks2  from "assets/img/networks2.jpg";
+import networks6  from "assets/img/networks6.jpg";
+import networks5  from "assets/img/networks5.jpg";
+import networks7  from "assets/img/networks7.jpg";
+
+import software5 from "assets/img/software5.jpg";
+
+import websites1 from "assets/img/websites1.jpg";
+import websites2 from "assets/img/websites2.jpg";
+import websites3 from "assets/img/websites3.jpg";
+
+import unifi1 from "assets/img/unifi1.png";
+import monitor1 from "assets/img/monitor.jpg";
+import phone from "assets/img/phone.jpg";
+import tablet from "assets/img/tablet.jpg";
+import computer from "assets/img/computer.jpg";
+
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 
@@ -47,7 +60,7 @@ class ServicesPage extends React.Component {
       <div>
         <Header
           color="transparent"
-          brand="Material Kit React"
+          brand="CampOwl"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -63,9 +76,7 @@ class ServicesPage extends React.Component {
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={6}>
                   <div className={classes.profile}>
-                    <div>
-                      <img src={favicon3} alt="..." className={imageClasses} />
-                    </div>
+                   
                     <div className={classes.name}>
                       <h2 className={classes.title}>Our Services</h2>
                       <h3>Innovative Solutions for RV Resorts and Campground Management.</h3>
@@ -85,141 +96,159 @@ class ServicesPage extends React.Component {
                     tabs={[
                       {
                         tabButton: "Hardware",
-                        tabIcon: Camera,
+                        tabIcon: SettingsInputAntennaIcon,
                         tabContent: (
                           <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={4}>
+                            <GridItem>
+                              <h3>Managed Hardware</h3>
+                              <h4>Better Systems, Better Booking.</h4>
+                              </GridItem>
+                            
+                            <GridItem xs={12} sm={12} md={4}>                            
                               <img
                                 alt="..."
-                                src={studio1}
+                                src={hardware1}
                                 className={navImageClasses}
                               />
+                            <h4>Workstations and Point of Sale</h4>
                               <img
                                 alt="..."
-                                src={studio2}
+                                src={hardware4}
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={studio5}
+                                src={hardware3}
                                 className={navImageClasses}
                               />
+                            <h4> Tire of "hold on, my computers being slow?"</h4>
                               <img
                                 alt="..."
-                                src={studio4}
+                                src={computer}
                                 className={navImageClasses}
                               />
+                            </GridItem>
+                            <GridItem>
+                              <Button  size="lg"color="primary">
+                               Upgrade Today
+                              </Button>
                             </GridItem>
                           </GridContainer>
                         )
                       },
                       {
-                        tabButton: "Networks",
-                        tabIcon: Palette,
+                        tabButton: "Network",
+                        tabIcon: ComputerIcon,
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work1}
+                                src={networks2}
                                 className={navImageClasses}
                               />
+                              <h3>Networks/Wireless Mesh</h3>
+                              <h5>Installations, Maintenaince, and Support</h5>
                               <img
                                 alt="..."
-                                src={work2}
+                                src={unifi1}
                                 className={navImageClasses}
                               />
-                              <img
-                                alt="..."
-                                src={work3}
-                                className={navImageClasses}
-                              />
+                              
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work4}
+                                src={networks7}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work5}
+                                src={networks1}
                                 className={navImageClasses}
                               />
                             </GridItem>
+                            <GridItem >
+                              <Button size="lg" color="primary">
+                                Details
+                              </Button>
+                            </GridItem>
+                            
                           </GridContainer>
                         )
                       },
                       {
                         tabButton: "Website",
-                        tabIcon: Favorite,
+                        tabIcon: LanguageIcon,
                         tabContent: (
                           <GridContainer justify="center">
+                            <GridItem>
+                              <h3>Modern Web Technology</h3>
+                              <h4>Convey your experience, the Guests are waiting.</h4>
+                            </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work4}
+                                src={websites1}
                                 className={navImageClasses}
                               />
+                              <h3>Design, Engage, Book</h3>
                               <img
                                 alt="..."
-                                src={studio3}
+                                src={websites2}
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work2}
+                                src={websites3}
                                 className={navImageClasses}
                               />
+                              
                               <img
                                 alt="..."
-                                src={work1}
+                                src={hardware3}
                                 className={navImageClasses}
                               />
-                              <img
-                                alt="..."
-                                src={studio1}
-                                className={navImageClasses}
-                              />
+                            
                             </GridItem>
                           </GridContainer>
                         )
                       },
                       {
                         tabButton: "Software",
-                        tabIcon: Palette,
+                        tabIcon: ImportantDevicesIcon,
                         tabContent: (
                           <GridContainer justify="center">
+                            <GridItem>
+                              <h3>Intuitive Reservation Software</h3>
+                              <h4>Coming this Year</h4>
+                            </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
+                              
                               <img
                                 alt="..."
-                                src={work1}
+                                src={tablet}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work2}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={work3}
+                                src={websites1}
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work4}
+                                src={phone}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work5}
+                                src={software5}
                                 className={navImageClasses}
                               />
                             </GridItem>
